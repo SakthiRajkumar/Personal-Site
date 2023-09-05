@@ -1,0 +1,214 @@
+body{
+    font-family: 'DM Sans', sans-serif;
+    height: 100vh;
+    width: 100%;
+}
+/**********Main Section********/
+h1{
+    font-family: 'Ephesis', cursive;
+    letter-spacing: 2px;
+    font-size: 60px;
+    margin-bottom: 0;
+}
+.main-section{
+    background-image: url(./images/MainSection_BG.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    color: #313878;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+.main-section p{
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+.web{
+    color: white;
+}
+.web:hover{
+    color:#313878;
+}
+/********About Me********/
+.about-me{
+    display: flex;
+    justify-content: center;
+    
+}
+.grey-background{
+    background-color:#E6EAEE;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+    padding: 10% 5% 10% 5%;
+    width: 80%;
+    margin-top: 10%;
+    
+}
+.about-me-msg{   
+    font-size: large;
+    height: 400px;
+    width: 300px;
+    letter-spacing: 1px;
+   }
+.about-me-msg h2{
+    font-size: 48px;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    margin: 0;
+}
+.about-me-msg p{
+    line-height: 2;
+    margin-top: 40px;
+}
+/********Skills*****/
+.skills-section{
+    background-color: #DEE1F4;
+    padding-bottom: 5%;
+    margin: 0;
+}
+.skills-section h2{
+    text-align: center;
+    color: #313878;
+    font-size: 40px;
+    font-weight: lighter;
+    letter-spacing: 8px;
+    margin-top: 0;
+    padding-top: 3%;
+}
+.skills-section h3{
+    letter-spacing: 3px;
+    color: #313878;
+    
+}
+.skill{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+.skill-img{
+    border-radius: 50%;
+    margin: 10px;
+}
+.skill-content{
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    text-align: justify;
+    color: #313878;
+    font-weight: lighter;
+    line-height: 1.5;
+}
+/*****Call to Action*************/
+.grey-bg-top{
+    background-color:#E6EAEE ;
+    height: 10%;
+    width:85%;
+    padding: 5% 2%;
+    margin: auto;
+    
+}
+.contact-msg {
+    text-align: center;
+    height: 70%;
+    margin: 10% auto;
+}
+.contact-me{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    color: #313878;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+.contact-msg p{
+    color: #313878;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    margin: 20px;
+}
+.btn {
+    background: #B3C5EE;
+    background-image: -webkit-linear-gradient(top, #B3C5EE, #84c2e8);
+    background-image: -moz-linear-gradient(top, #B3C5EE, #84c2e8);
+    background-image: -ms-linear-gradient(top, #B3C5EE, #84c2e8);
+    background-image: -o-linear-gradient(top, #B3C5EE, #84c2e8);
+    background-image: linear-gradient(to bottom, #B3C5EE, #84c2e8);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    border: solid #ffffff 2px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-top:20px;
+  }
+  
+  .btn:hover {
+    background: #5be1e3;
+    background-image: -webkit-linear-gradient(top, #5be1e3, #20a4b0);
+    background-image: -moz-linear-gradient(top, #5be1e3, #20a4b0);
+    background-image: -ms-linear-gradient(top, #5be1e3, #20a4b0);
+    background-image: -o-linear-gradient(top, #5be1e3, #20a4b0);
+    background-image: linear-gradient(to bottom, #5be1e3, #20a4b0);
+    text-decoration: none;
+  }
+
+/******Footer******/
+footer{
+    background-color: #B3C5EE;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+footer ul{
+    list-style: none;
+    display: inline-flex;
+    gap: 20px;
+    padding-left: 0;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #313878;
+}
+/******Media Query-Responsiveness******/
+@media screen and (max-width: 750px) {
+    /***Main Section***/
+    .main-section{
+    background-image: url(./images/MainSection-SmallBg.png);
+    }
+    /***About Me******/
+    .grey-background{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-me-msg h2{
+        text-align: center;
+    }
+    .about-me-msg p{
+        text-align: justify;
+    }
+    /****Skills*******/
+    .skill{
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+    .skill2{
+        flex-direction: column-reverse;
+    }
+    .skill-content{
+        min-width: 400px;
+        
+    }
+}
