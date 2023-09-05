@@ -2,6 +2,7 @@ body{
     font-family: 'DM Sans', sans-serif;
     height: 100vh;
     width: 100%;
+    margin: 0;
 }
 /**********Main Section********/
 h1{
@@ -70,7 +71,7 @@ h1{
 .skills-section{
     background-color: #DEE1F4;
     padding-bottom: 5%;
-    margin: 0;
+    
 }
 .skills-section h2{
     text-align: center;
@@ -166,6 +167,8 @@ footer{
     background-color: #B3C5EE;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    padding-bottom: 5px;
+    margin-top:50px;
 }
 footer ul{
     list-style: none;
@@ -210,5 +213,23 @@ footer a:hover{
     .skill-content{
         min-width: 400px;
         
+    }
+}
+
+@media (max-width: 576px) {
+    h1{
+        font-size: 40px;
+    }
+    .main-section p{
+        font-size: 20px;
+    }
+    .skill-content{
+        min-width: 200px;  
+    }
+    .contact-me{
+        font-size: 30px;
+    }
+    .contact-msg p{
+        letter-spacing: 2px;
     }
 }
