@@ -184,7 +184,7 @@ footer a:hover{
     color: #313878;
 }
 /******Media Query-Responsiveness******/
-@media (min-width: 577px) and (max-width: 750px) {
+@media (max-width: 750px) {
     /***Main Section***/
     .main-section{
     background-image: url(./images/MainSection-SmallBg.png);
